@@ -1,0 +1,13 @@
+<resources>
+    <!--App Name-->
+    <string name="app_name">FootballCounter</string>
+    <!--TextViews-->
+    <string name="TeamA">Team A</string>
+    <string name="TeamB">Team B</string>
+    <string name="Fouls">Fouls</string>
+
+    <!--Buttons Text-->
+    <string name="Goal">goal</string>
+    <string name="Foul">foul</string>
+    <string name="Reset">reset</string>
+</resources>

@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_a_label"
+                style="@style/teamLabelStyle"
+                android:text="@string/TeamA" />
+
+            <TextView
+                android:id="@+id/team_a_goal"
+                style="@style/teamGoalStyle"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/team_a_foul_label"
+                style="@style/teamFoulLabelStyle"
+                android:text="@string/Fouls" />
+
+            <TextView
+                android:id="@+id/team_a_foul"
+                style="@style/teamFoulStyle"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/team_a_goalButton"
+                style="@style/buttonStyle"
+                android:onClick="addGoalTeamA"
+                android:text="@string/Goal" />
+
+            <Button
+                android:id="@+id/team_a_foulButton"
+                style="@style/buttonStyle"
+                android:onClick="addFoulTeamA"
+                android:text="@string/Foul" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/verticalLine"
+            style="@style/lineStyle"></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_b_label"
+                style="@style/teamLabelStyle"
+                android:text="@string/TeamB" />
+
+            <TextView
+                android:id="@+id/team_b_goal"
+                style="@style/teamGoalStyle"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/team_b_foul_label"
+                style="@style/teamFoulLabelStyle"
+                android:text="@string/Fouls" />
+
+            <TextView
+                android:id="@+id/team_b_foul"
+                style="@style/teamFoulStyle"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/team_b_goalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:onClick="addGoalTeamB"
+                android:text="@string/Goal" />
+
+            <Button
+                android:id="@+id/team_b_foulButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:onClick="addFoulTeamB"
+                android:text="@string/Foul" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:onClick="resetScore"
+        android:text="@string/Reset" />
+</RelativeLayout>

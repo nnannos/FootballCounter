@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTeamLabel">#616161</color>
+    <color name="colorScoreGoals">#000000</color>
+    <color name="colorFoulsLabel">#ee2010</color>
+    <color name="colorFouls">#ee2010</color>
+    <color name="colorLine">#e888</color>
+</resources>
